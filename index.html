@@ -17,7 +17,7 @@
 
 
 
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar bg-light">
 
         <div class="container-fluid">
 
@@ -27,57 +27,121 @@
                 <i class="bi bi-mortarboard-fill me-2"></i>
 
 
-                Student Management
+                <h1>Student Management</h1>
 
             </a>
+            <i class="bi bi-person-circle"></i>
 
         </div>
 
     </nav>
-    <main>
-        <div class="sidebar">
-            <h1>Student</h1>
+    <main class="d-flex">
 
+        <!-- Sidebar -->
+        <div class="sidebar bg-dark text-white p-3">
+
+            <h3 class="mb-4">Dashboard</h3>
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item mb-3">
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-house-fill me-2"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-people-fill me-2"></i> Students
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a class="nav-link text-white" href="#">
+
+                        <i class="bi bi-book-fill me-2"></i> Courses
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-gear-fill me-2"></i> Settings
+                    </a>
+                </li>
+
+            </ul>
 
         </div>
-        <div class="content">
-            <table class="table caption-top">
-                <caption>List of users</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Age</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
 
+
+        <div class="content p-4">
+
+            <h2 class="mb-4">Student Details</h2>
+
+            <button>
+
+                <i class="bi bi-plus"></i>ADD
+            </button>
+
+            <table class="table table-bordered table-hover">
+
+                <thead class="table-dark">
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Anu</td>
+                        <td>18</td>
+                        <td>7708448147</td>
+
+                        <td>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+
+                            <button class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash3-fill"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Harini</td>
+                        <td>20</td>
+                        <td>9488831376</td>
+
+                        <td>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+
+                            <button class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash3-fill"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
 
         </div>
 
     </main>
-
 
 
 </body>
